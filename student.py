@@ -14,6 +14,9 @@ class Student:
 
     def __str__(self):
         return (f"Hello my name is: {self.name}, {self.age}, {self.height}, {self.gender}, {self.score}")
+    
+    def introduce(self):
+        return f"Hello my name is: {self.name}. My age is {self.age}."
 
 
 
@@ -27,3 +30,5 @@ print(lajos.score)
 print(lajos.learn(10))
 print(lajos)
 print(anna.score)
+print(anna.introduce())
+print(lajos.introduce())
