@@ -1,10 +1,14 @@
 class Student:
-    name = ""
-    age = 0
-    height = 0
-    gender = ""
+
     score = 0
     
+    def __init__(self, name_, age_, height_, gender_):
+        self.name = name_
+        self.age = age_
+        self.height = height_
+        self.gender = gender_
+    
+
     def learn(self, test):
         self.score+= test
 
@@ -13,16 +17,13 @@ class Student:
 
 
 
-lajos = Student()
-anna = Student()
+lajos = Student("Lajos", 13, 178, "fiu")
+anna = Student("Anna", 15, 170, "lany")
 print(lajos.height)
-lajos.name = "Lajos"
-lajos.age = 13
-lajos.height = 170
-lajos.gender = "fiú"
+
 print(lajos.height)
 print(lajos.name)
 print(lajos.score)
 print(lajos.learn(10))
 print(lajos)
-print(anna)
+print(anna.score)
